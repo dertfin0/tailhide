@@ -180,3 +180,5 @@ cython_debug/
 *.png
 
 *.idea
+package
+package/*
