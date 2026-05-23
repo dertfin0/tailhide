@@ -1,4 +1,4 @@
-import os
+import os, sys
 from cryptography.fernet import Fernet
 from base64 import b64encode
 import argparse
@@ -68,7 +68,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if (args.hide and args.reveal) or (not args.hide and not args.reveal):
         print("Invalid arguments. Try th --help")
-        exit(0)
+        sys.exit(0)
 
 
     if args.hide:
